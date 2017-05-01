@@ -1,0 +1,362 @@
+.pageContainer {
+	width: 1024;
+	height:768;
+}
+
+.nameplate {
+
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: left;
+	color: black;
+}
+
+
+h3.white {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: left;
+	margin-bottom:0px;
+	color: white;
+	margin-top: 0
+}
+
+h3.whiteCentered {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	color: white;
+	margin-top: 0
+}
+
+h3.blackCentered {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	text-align: center;
+	color: black;
+	margin-top: 0
+}
+
+
+.project1 {
+	width: 800px;
+	height:810px;
+	text-align: left;
+	position: relative;
+	display: block;
+	margin-bottom:22px;
+	background-color: black;
+
+}
+
+.project2 {
+	width: 800px;
+/*	margin-left: auto;
+	margin-right: auto;*/
+	margin-left:75px;
+	margin-top: 100px;
+	position: relative;
+	background-color: white;
+	display: block;
+}
+
+.project3 {
+	width: 800px;
+	height:668px;
+	padding: 0px;
+	text-align: center;
+	position: relative;
+	display: block;
+	background-color:white;
+	overflow: hidden;
+	border-top: 0px;
+	border-bottom: 1px;
+	border-left: 0px;
+	border-right: 0px;
+	border-style: solid;
+	border-color: black;
+	margin-bottom: 22px;
+	z-index:1;
+}
+
+.project4 {
+	width: 800px;
+	height:590px;
+	text-align: center;
+	padding-top: 12%;
+	margin-top:22px;
+	margin-bottom: 22px;
+	position: relative;
+	background-color: gray;
+	display: block;
+}
+
+.project5 {
+	width: 800px;
+	text-align: center;
+	padding-top:22px;
+	padding-bottom: 15px;
+	position: relative;
+	background-color: black;
+	display: inline-block;
+}
+
+.project6 {
+	width: 800px;
+	height:768px;
+	text-align: center;
+	margin-bottom: 22px;
+	position: relative;
+	background-color: white;
+	display: block;
+}
+
+.project7 {
+	width: 800px;
+	height:565px;
+	text-align: center;
+	bottom:22px;
+	padding-top: 5px;
+/*	padding-top: 22px;*/
+	position: relative;
+	background-color: black;
+	display: block;
+}
+
+.project8 {
+	width: 800px;
+	height:740px;
+	text-align: center;
+	bottom:22px;
+	padding-top: 5px;
+	margin-top: 22px;
+/*	padding-top: 22px;*/
+	position: relative;
+	background-color: black;
+	display: block;
+}
+
+.project9 {
+	width: 800px;
+	height:745px;
+	text-align: center;
+	bottom:22px;
+	padding-top: 5px;
+	margin-top: 22px;
+/*	padding-top: 22px;*/
+	position: relative;
+	background-color: black;
+	display: block;
+}
+/*body{
+	width:1024px;
+	height:768px;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: black;
+	background-image: url("assets/openerAnim.gif");
+	background-repeat: no-repeat;
+}*/
+
+h1 {
+	font-family: 'Ubuntu Mono';
+	font-weight: 400;
+	font-size: 1em;
+	color: white;
+	display: inline-block;
+	text-align: left;
+	letter-spacing: .25em;
+	margin: 0;
+	visibility: hidden;
+}
+
+.nameContainer {
+	width: 80px;
+	padding:5px;
+	margin-top: 20px;
+	background-color: black;
+}
+
+.otherSample {
+	width: 250px;
+	height:167px;
+	margin: 22px;
+	top:595px;
+	left:319px;
+	background-color: red;
+	float: left;
+	vertical-align: bottom;
+	position: absolute;
+	z-index: 100;
+}
+
+.textBox {
+	width: 164px;
+	height:167px;
+	left:592px;
+	top: 643px;
+	margin-left: 22px;
+	margin-top: 22px;
+	margin-right: 0px;
+	padding-top: 0px;
+	float: left;
+	position: absolute;
+	vertical-align: bottom;
+	z-index: 100;
+}
+
+.textBoxVertical {
+	width: 140px;
+	height:350px;
+	left:44px;
+	top: 120px;
+	margin-left: 22px;
+	margin-top: 22px;
+	margin-right: 22px;
+	float: left;
+	position: absolute;
+	vertical-align: bottom;
+/*z-index: 100;*/
+}
+
+.textBoxVerticalLink {
+	width: 140px;
+	height:350px;
+	left:44px;
+	top: 120px;
+	margin-left: 22px;
+	margin-top: 22px;
+	margin-right: 22px;
+	float: left;
+	position: absolute;
+	vertical-align: bottom;
+	z-index: 100;
+}
+
+.textBoxHorizontal {
+	width: 350px;
+	left:195px;
+/*	top: 585px;*/
+	margin-left: 22px;
+	margin-top: 22px;
+	margin-right: 22px;
+	margin-bottom: 0px;
+	vertical-align: bottom;
+	display: inline-block;
+	z-index: 100;
+}
+
+.textBoxHorizontalTop {
+	width: 350px;
+	left:195px;
+/*	top: 585px;*/
+	margin-left: 22px;
+	margin-top: 22px;
+	margin-right: 22px;
+	/*margin-bottom: 5px;*/
+	vertical-align: bottom;
+	display: inline-block;
+	z-index: 100;
+}
+
+video {
+width: 755px;
+height: 435px;
+width: 94.5%;
+height: auto;
+margin:22px;
+position: absolute;
+overflow: hidden;
+background-size: cover;
+}
+
+video.new {
+left:0px;
+top:-30px;
+width: 800px;
+height: 668px;
+margin-left: 0 auto;
+margin-right:0 auto;
+position: absolute;
+}
+
+video.small {
+width: 297px;
+height: 167px;
+top:595px;
+margin-left: 22px;
+margin-right: 22px;
+position: absolute;
+display: inline;
+vertical-align: bottom;
+float: left;
+}
+.groupContainer {
+	width: 30%;
+	height: auto;
+}
+
+iframe {
+	margin-top:22px;
+	left:0px;
+		width: 381px;
+	height: 681px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 22px;
+	border-style:solid;
+	border-width: 1px;
+	border-color: black;
+	display: block;
+	/*position: absolute;*/
+}
+
+.phoneBox {
+	width: 381px;
+	height: 681px;
+	margin-left: 0px;
+	margin-top: 22px;
+	margin-right: 22px;
+	margin-bottom: 22px;
+	display: inline-block;
+	background-color: blue;
+}
+
+.pdfDiv {
+	width: 800px;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	position:absolute;
+}
+
+.presentationImg {
+	width: 80%;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	position: relative;
+	background-color: gray;
+	display: block;
+}
+
+/*#video-bg {
+position: fixed;
+right: 0;
+bottom: 0;
+	width: 800px;
+	height:668px;
+min-height: 100%;
+z-index: -100;
+background: transparent url(video-bg.jpg) no-repeat;
+background-size: cover;
+}*/
