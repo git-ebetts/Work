@@ -103,6 +103,7 @@ h3.blackCentered {
 	text-align: center;
 	padding-top:22px;
 	padding-bottom: 15px;
+	margin-bottom: 22px;
 	position: relative;
 	background-color: black;
 	display: inline-block;
@@ -122,7 +123,6 @@ h3.blackCentered {
 	width: 800px;
 	height:565px;
 	text-align: center;
-	bottom:22px;
 	padding-top: 5px;
 /*	padding-top: 22px;*/
 	position: relative;
@@ -134,9 +134,10 @@ h3.blackCentered {
 	width: 800px;
 	height:740px;
 	text-align: center;
-	bottom:22px;
+	/*bottom:22px;*/
 	padding-top: 5px;
 	margin-top: 22px;
+	margin-bottom: 22px;
 /*	padding-top: 22px;*/
 	position: relative;
 	background-color: black;
@@ -147,9 +148,9 @@ h3.blackCentered {
 	width: 800px;
 	height:745px;
 	text-align: center;
-	bottom:22px;
+	/*bottom:22px;*/
 	padding-top: 5px;
-	margin-top: 22px;
+	/*margin-top: 22px;*/
 /*	padding-top: 22px;*/
 	position: relative;
 	background-color: black;
