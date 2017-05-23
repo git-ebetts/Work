@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+   <!-- <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>-->
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+   <!-- <script language="javascript" type="text/javascript" src="sketch.js"></script>-->
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style> body {padding: 0; margin: 0;} </style>
+</head>
+<body>
+<code>
+  <p class="white">
+var capture;</br>
+var imgA;</br>
+var imgB;</br>
+var imgC;</br>
+var imgD;</br>
+</br>  
+var img1;</br>
+var img2;</br>
+var img3;</br>
+var img4;</br>
+</br>
+var imgMaskA;</br>
+var imgMaskC;</br>
+var imgMask2;</br>
+var imgMask4;</br>
+var loc;</br>
+</br>
+function preload() {</br>
+</br>  
+  imgMaskA = loadImage("assets/mask_a.png");</br>
+  imgMaskC = loadImage("assets/mask_c.png");</br>
+  imgMask2 = loadImage("assets/mask_2.png");</br>
+  imgMask4 = loadImage("assets/mask_4.png");</br>
+}</br>
+</br>
+function setup() {</br>
+</br>  
+createCanvas(640, 480);</br>
+capture = createCapture(VIDEO);</br>
+capture.size(320, 240);</br>
+capture.hide();</br>
+imgA = createImage(320, 240);</br>
+imgB = createImage(320, 240);</br>
+imgC = createImage(320, 240);</br>
+imgD = createImage(320, 240);</br>
+img1 = createImage(320, 240);</br>
+img2 = createImage(320, 240);</br>
+img3 = createImage(320, 240);</br>
+img4 = createImage(320, 240);</br>
+}</br>
+</br>
+function draw() {</br>
+background(255);</br>
+</br>  
+capture.loadPixels();</br>
+imgA.loadPixels();</br>
+imgB.loadPixels();</br>
+imgC.loadPixels();</br>
+imgD.loadPixels();</br>
+img1.loadPixels();</br>
+img2.loadPixels();</br>
+img3.loadPixels();</br>
+img4.loadPixels();</br>
+</br>
+</br>
+for (var y = 0; y < capture.height; y++) {</br>
+    for (var x = 0; x < capture.width; x++) {</br>
+      loc = (x + y * capture.width) * 4;</br>
+</br>
+      imgA.pixels[loc] = capture.pixels[loc];</br>
+      imgA.pixels[loc + 1] = capture.pixels[loc + 1];</br>
+      imgA.pixels[loc + 2] = capture.pixels[loc + 2];</br>
+      imgA.pixels[loc + 3] = capture.pixels[loc + 3];</br>
+      </br>
+      imgB.pixels[loc] = capture.pixels[loc];</br>
+      imgB.pixels[loc + 1] = capture.pixels[loc + 1];</br>
+      imgB.pixels[loc + 2] = capture.pixels[loc + 2];</br>
+      imgB.pixels[loc + 3] = capture.pixels[loc + 3];</br>
+      </br>
+      imgC.pixels[loc] = capture.pixels[loc];</br>
+      imgC.pixels[loc + 1] = capture.pixels[loc + 1];</br>
+      imgC.pixels[loc + 2] = capture.pixels[loc + 2];</br>
+      imgC.pixels[loc + 3] = capture.pixels[loc + 3];</br>
+      </br>
+      imgD.pixels[loc] = capture.pixels[loc];</br>
+      imgD.pixels[loc + 1] = capture.pixels[loc + 1];</br>
+      imgD.pixels[loc + 2] = capture.pixels[loc + 2];</br>
+      imgD.pixels[loc + 3] = capture.pixels[loc + 3];</br>
+      </br>
+      img1.pixels[loc] = capture.pixels[loc];</br>
+      img1.pixels[loc + 1] = capture.pixels[loc + 1];</br>
+      img1.pixels[loc + 2] = capture.pixels[loc + 2];</br>
+      img1.pixels[loc + 3] = capture.pixels[loc + 3];</br>
+      </br>
+      img2.pixels[loc] = capture.pixels[loc];</br>
+      img2.pixels[loc + 1] = capture.pixels[loc + 1];</br>
+      img2.pixels[loc + 2] = capture.pixels[loc + 2];</br>
+      img2.pixels[loc + 3] = capture.pixels[loc + 3];</br>
+      </br>
+      img3.pixels[loc] = capture.pixels[loc];</br>
+      img3.pixels[loc + 1] = capture.pixels[loc + 1];</br>
+      img3.pixels[loc + 2] = capture.pixels[loc + 2];</br>
+      img3.pixels[loc + 3] = capture.pixels[loc + 3];</br>
+      </br>
+      img4.pixels[loc] = capture.pixels[loc];</br>
+      img4.pixels[loc + 1] = capture.pixels[loc + 1];</br>
+      img4.pixels[loc + 2] = capture.pixels[loc + 2];</br>
+      img4.pixels[loc + 3] = capture.pixels[loc + 3];</br>
+}</br>
+</br>
+imgA.updatePixels();</br>
+imgB.updatePixels();</br>
+imgC.updatePixels();</br>
+imgD.updatePixels();</br>
+img1.updatePixels();</br>
+img2.updatePixels();</br>
+img3.updatePixels();</br>
+img4.updatePixels();</br>
+</br>
+  imgA.mask(imgMaskA);</br>
+  imgB.mask(imgMask2);</br>
+  imgC.mask(imgMaskC);</br>
+  imgD.mask(imgMask4);</br>
+  </br>
+  img1.mask(imgMaskA);</br>
+  img2.mask(imgMask2);</br>
+  img3.mask(imgMaskC);</br>
+  img4.mask(imgMask4);</br>
+</br>
+//IMAGE D, TOP ROW</br>
+  push();</br>
+  scale(-1,1);</br>
+  image(imgD, -imgD.width, 0, 0, 0);</br>
+  pop();</br>
+  </br>
+//IMAGE C, TOP ROW</br>
+  image(imgC, 0, 0, 0, 0);</br>
+  </br>
+//IMAGE B, TOP ROW</br>
+  push();</br>
+  scale(-1,1);</br>
+  image(imgB, -imgB.width, 0, 0, 0);</br>
+  pop();</br>
+  </br>
+//IMAGE A, TOP ROW</br>
+  image(imgA, 0, 0, 0, 0);</br>
+</br>
+//IMAGE 1, TOP ROW</br>
+  push();</br>
+  scale(-1,1);</br>
+  image(img1, -imgA.width, 0, -320, 0);</br>
+  pop();</br>
+</br>
+//IMAGE 2, TOP ROW</br>
+  image(img2, 320, 0, 320, 0);</br>
+  </br>
+//IMAGE 3, TOP ROW</br>
+  push();</br>
+  scale(-1,1);</br>
+  image(img3, -imgA.width, 0, -320, 0);</br>
+  pop();</br>
+</br>
+//IMAGE 4, TOP ROW</br>
+  image(img4, 320, 0, 320, 0); </br>
+  </br>
+//FLIPPED FOR BOTTOM ROW</br>
+translate(640, 480);</br>
+rotate(PI);</br>
+}</br>
+}</br>
+</p>
+</code>
+</body>
+</html>
